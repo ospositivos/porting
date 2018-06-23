@@ -1,0 +1,94 @@
+/* HTML */
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  }
+h1, h2, h3 {
+  font-family: 'Londrina Solid', cursive;
+  }
+a,
+a:focus,
+a:hover {
+  color: #fff;
+  }
+
+/* vertical & horizontal center */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* Firefox */
+  min-height: 100%;
+  }
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+  }
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+  }
+.inner {
+  padding: 30px;
+}
+
+/* Footer */
+.mastfoot {
+  color: #999; /* IE8 */
+  color: rgba(255,255,255,.5);
+  position: fixed;
+  bottom: 0;
+}
+
+/* Affix */
+@media (max-width: 768px) {
+  body {
+    background:url(../images/mobile-bg.png) no-repeat top center #00d300;
+  }  
+}
+@media (min-width: 768px) { 
+  body {
+    background:url(../images/desktop-bg.png) no-repeat center center;
+  } 
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* !! percentagem ou pixels */
+  }
+}
+@media (min-width: 992px) {
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
+
+/* mailchimp */
+#mc_embed_signup {
+  width:20em;
+  padding:20px;
+  border-radius:25px;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+  }
+#mc_embed_signup h2 {
+  color:#fff;
+  }
+#mc_embed_signup .endereco {
+  margin:10px auto;
+  padding:0 40px;
+}
+#mc-embedded-subscribe {
+  font-family: 'Londrina Solid', cursive;
+}
+
